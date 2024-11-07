@@ -42,13 +42,13 @@ button {
 .versus {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 500px;
 }
 
 .para-vs {
     position: absolute;
     font-weight: 900;
-    top: 25%;
     font-size: 100px;
     text-shadow:  5px 5px rgba(33, 39, 56, 50%);
 }
