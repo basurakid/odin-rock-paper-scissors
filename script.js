@@ -25,7 +25,7 @@ function playRound(e) {
     computerChoice = getComputerChoice();
 
     updateIcon(humanChoice, computerChoice);
-    
+
     if (humanChoice === computerChoice) {
         results.textContent = `It's a draw, you both chose ${humanChoice}`
     }
@@ -70,9 +70,10 @@ function declareWinner(winner) {
     if (winner === "AI") {
         results.textContent = "AI WINS. BETTER LUCK NEXT TIME!"
     }
-    buttonsDiv.removeChild(rockBtn);
-    buttonsDiv.removeChild(paperBtn);
-    buttonsDiv.removeChild(scissorsBtn);
+
+    buttonsDiv.removeChild(document.querySelector("#rock"));
+    buttonsDiv.removeChild(document.querySelector("#paper"));
+    buttonsDiv.removeChild(document.querySelector("#scissors"));
     
     const playAgainBtn = document.createElement("button");
     playAgainBtn.textContent = "Play Again";
@@ -86,11 +87,11 @@ function playAgain(delRockBtn, delPaperBtn, delScissorsBtn) {
     humanScore = 0;
     computerScore = 0;
     
-    updateScore()
+    updateScore();
+    updateIcon();
 
     results.textContent = "Ready? Click your choice.";
-    const playAgainBtn = document.querySelector("#playAgain");
-    buttonsDiv.removeChild(playAgainBtn);
+    buttonsDiv.removeChild(document.querySelector("#playAgain"));
 
     const rockBtn = document.createElement("button");
     const paperBtn = document.createElement("button");

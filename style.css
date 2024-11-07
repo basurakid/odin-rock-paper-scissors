@@ -52,7 +52,8 @@ button {
     font-weight: 900;
     font-size: 100px;
     text-shadow:  5px 5px rgba(33, 39, 56, 50%);
-    letter-spacing: 5px;
+    letter-spacing: 10px;
+    margin-left: 5px;
 }
 
 .score {
@@ -61,6 +62,8 @@ button {
     font-weight: 900;
     font-size: 48px;
     text-shadow:  5px 5px rgba(33, 39, 56, 50%);
+    margin-left: 5px;
+    letter-spacing: 5px;
 }
 
 .fighter {
