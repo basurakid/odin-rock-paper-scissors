@@ -51,10 +51,15 @@ button {
     font-weight: 900;
     font-size: 100px;
     text-shadow:  5px 5px rgba(33, 39, 56, 50%);
+    letter-spacing: 5px;
 }
 
 .score {
     position: absolute;
+    margin-top: 180px;
+    font-weight: 900;
+    font-size: 48px;
+    text-shadow:  5px 5px rgba(33, 39, 56, 50%);
 }
 
 .fighter {
@@ -75,6 +80,5 @@ button {
 }
 
 a {
-    text-decoration: none;
     color:#EDF2EF
 }
