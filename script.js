@@ -17,23 +17,6 @@ const getRandomInt = (max=3) => {
     return Math.floor(Math.random() * max);
 }
 
-const getHumanChoice = () => {
-    let keepGoing = true
-    while (keepGoing){
-        humanChoice = prompt("ROCK, PAPER, SCISSORS, SHOOT!").toLowerCase();
-
-        if (humanChoice === "rock") {
-            keepGoing = false
-        }
-        if (humanChoice === "paper") {
-            keepGoing = false
-        }
-        if (humanChoice === "scissors") {
-            keepGoing = false
-        } 
-    }
-    return humanChoice;
-}
 
 const playGame = () => {
     humanScore = 0;
@@ -54,13 +37,6 @@ const playGame = () => {
             console.log(`You win, ${humanChoice} beats ${computerChoice}`)
             humanScore ++;
         }
-    }
-
-    for (let i=1; i <= 5; i++) {
-        console.log(`Round ${i}`)
-        humanChoice = getHumanChoice();
-        computerChoice = getComputerChoice();
-        playRound(humanChoice, computerChoice);
     }
     console.log(`${humanScore > computerScore ? "You win!" : computerScore > humanScore ? "You lose!" : "You draw!"}`)
 }

@@ -1,0 +1,80 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: #212738;
+    color: #EDF2EF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    height: 90vh;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.results {
+    margin: 48px 0 0 0;
+}
+
+.buttons {
+    margin: 32px;
+}
+
+button {
+    font-size: 48px;
+    background-color: #212738;
+    border-radius: 10px;
+    padding: 10px
+}
+
+.versus {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+
+.para-vs {
+    position: absolute;
+    font-weight: 900;
+    top: 25%;
+    font-size: 100px;
+    text-shadow:  5px 5px rgba(33, 39, 56, 50%);
+}
+
+.score {
+    position: absolute;
+}
+
+.fighter {
+    font-size: 96px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blue {
+    background-color: #4766D6;
+}
+
+.red {
+    background-color: #E4382F;
+}
+
+a {
+    text-decoration: none;
+    color:#EDF2EF
+}
